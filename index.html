@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<!--
+    実践課題1-2
+    ポートフォリオサイト(index.html)
+    作成者：リンクス新越谷 栗田幸一
+    修正日(初版)：2023.2.17
+-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="ポートフォリオサイトの修正課題です" />
+        <title>LINKS TARO ポートフォリオ</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+        <link href="css/ress.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+<!-- 【修正】ソースコード全体の体裁を修正 -->
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <h1 class="header-logo">
+                        <a href=""><span class="links-orange">LINKS </span><span class="links-green">TARO</span></a>
+                    </h1>
+                    <nav id="gnav">
+                        <ul id="gnav-list">
+                            <!-- 【修正】gnav-itemをidからclassへ変更 -->
+                            <li class="gnav-item"><a href="#content1">WORKS</a></li>
+                            <li class="gnav-item"><a href="#content2">SKILL</a></li>
+                            <li class="gnav-item"><a href="#content3">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="content">
+                <div class="mv">
+                    <div class="mv-container">
+                        <p class="mv-title"><span class="links-orange">LINKS </span>
+                            <span class="links-green">TARO</span></p>
+                        <p class="mv-subtitle">PORTFOLIO</p>
+                        <p class="mv-text">
+                            見やすさを重視したシンプルな<br class="sp-only">
+                            テンプレートサイトです。<br>
+                            コンテンツを入れるだけで簡単に<br class="sp-only">
+                            ポートフォリオサイトを作成できます。<br>
+                        </p>
+                    </div>
+                </div>
+
+                <section class="content1 section" id="content1">
+                    <div class="container">
+                        <h2 class="title">WORKS</h2>
+                        <div class="content1-list">
+
+                            <!-- 【修正】以下、class名を統一 -->
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Design / Coding</p>
+                            </a>
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Design / Coding / WordPress</p>
+                            </a>
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Design</p>
+                            </a>
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Banner Design</p>
+                            </a>
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Poster Design</p>
+                            </a>
+
+                            <a class="content1-item" href="">
+                                <div class="content1-img">
+                                    <img src="https://placehold.jp/400x300.png" alt="" />
+                                </div>
+                                <p class="content1-name">作品名が入ります</p>
+                                <p class="content1-info">Photo Retouch</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content2 section" id="content2">
+                    <div class="container">
+                        <h2 class="title">SKILL</h2>
+                        <div class="content2-list">
+                            <!-- 【修正】.contents2-list内の構造を修正 -->
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">HTML/CSS</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">JavaScript</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">WordPress</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">Photoshop</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">Illustrator</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+
+                            <div class="content2-item">
+                                <p class="content2-img"><img src="https://placehold.jp/150x150.png" alt=""></p>
+                                <div class="content2-body">
+                                    <h3 class="content2-name">XD</h3>
+                                    <p class="content2-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content3 section" id="content3">
+                    <div class="container">
+                        <h2 class="title">ABOUT</h2>
+                        <div class="profile">
+                            <p class="profile-img"><img src="https://placehold.jp/300x300.png" alt=""></p>
+                            <div class="profile-body">
+                                <!-- 【修正】<br>追加 -->
+                                <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br class="pc-only">
+                                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br class="pc-only">
+                                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br class="pc-only">
+                                    テキストが入りますテキストが入りますテキストが入ります。
+                                </p>
+                                <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br class="pc-only">
+                                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br class="pc-only">
+                                    テキストが入りますテキストが入ります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="page-top" id="js-page-top">
+                    <span class="material-icons-outlined">expand_less</span>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="copyright">&copy;LINKS TARO</div>
+            </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- 【修正】scriptタグのsrc修正 (js/scrpit.js → js/script.js) -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

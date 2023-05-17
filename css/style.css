@@ -1,0 +1,479 @@
+/*
+  実践課題1-2
+  ポートフォリオサイト(style.css)
+  作成者：リンクス新越谷 栗田幸一
+  修正日(初版)：2023.2.17
+  修正日(最新)：2023.2.18
+*/
+
+/* PCの画面幅：幅1440px 高さ1930px */
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+/* 【修正】以下削除 */
+/* h1 span,
+div p span {
+  font-size: .8rem !important;
+  color: hsl(93, 53%, 40%) !important;
+}
+ */
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+.links-orange {
+  color: #F49D00;
+}
+
+.links-green {
+  color: #619B30;
+}
+
+.wrapper {
+  padding-top: 73px;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, .1);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: .05em;
+}
+
+#gnav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* 【修正】gnav-itemをidからclassへ変更 */
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gnav-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+.gnav-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.gnav-item a:hover:after {
+  width: 100%;
+}
+
+.mv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  text-align: center;
+}
+
+.mv-container {
+  padding: 0 40px;
+}
+
+.mv-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  letter-spacing: .1em;
+}
+
+.mv-subtitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  letter-spacing: .08em;
+}
+
+.mv-text {
+  line-height: 1.8;
+}
+
+.content1-list {
+  height: 600px;
+  margin-bottom: -40px;
+}
+
+/* 【修正】セレクタを統一 */
+.content1-item {
+  max-width: 300px;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.content1-item:hover {
+  opacity: .9;
+}
+
+.content1-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.content1-img img {
+  border: 1px solid #e6e6e6;
+}
+
+.content1-name {
+  font-size: .8rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.content1-info {
+  font-size: .6rem;
+  margin-top: 5px;
+}
+
+.content2-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.content2-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.content2-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.content2-body {
+  flex: 1;
+}
+
+.content2-name {
+  margin-bottom: 10px;
+}
+
+.content2-text {
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 20%;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.profile-img img {
+  border-radius: 50%;
+}
+
+.profile-body {
+  flex: 1;
+}
+
+.profile-body p {
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.profile-body p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #F49D00;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #619B30;
+}
+
+.copyright {
+  font-size: .6rem;
+  text-align: center;
+  color: #FFF;
+}
+
+/* 【修正】以下削除 */
+/* .links-orange {
+  color: #619B30;
+} */
+
+
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: .8rem;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    font-size: .8rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* 【修正】デグレ修正 */
+  .wrapper {
+    padding-top: 57px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .header .container {
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: .8rem;
+    margin-right: 15px;
+  }
+
+/* 【修正】gnav-itemをidからclassへ変更 */
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item a {
+    font-size: .6rem;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+
+  .mv {
+    height: 75vh;
+  }
+
+  .mv-container {
+    padding: 0 20px;
+  }
+
+  .mv-title {
+    font-size: 1.2rem;
+  }
+
+  .mv-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .mv-text {
+    font-size: .8rem;
+    line-height: 1.7;
+  }
+
+/* 【修正】セレクタを統一 */
+  .content1-name {
+    font-size: .6rem;
+  }
+
+  .content1-info {
+    margin-top: 3px;
+  }
+
+  /* 【修正】flex-boxのレイアウト修正 */
+  .content1-list {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content1-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .content2-list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .content2-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .content2-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .content2-name {
+    margin-bottom: 5px;
+  }
+
+  .content2-text {
+    font-size: .8rem;
+    line-height: 1.7;
+  }
+
+  .profile {
+    display: block;
+    /* 【修正】レイアウト修正 */
+    min-width: 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p {
+    font-size: .8rem;
+    line-height: 1.7;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+}
